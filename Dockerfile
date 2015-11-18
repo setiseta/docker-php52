@@ -7,7 +7,7 @@ COPY assets/utterramblings.repo /etc/yum.repos.d/utterramblings.repo
 RUN rpm --import http://yum.jasonlitka.com/RPM-GPG-KEY-jlitka && \
 	yum install -y epel-release && \
 	yum upgrade -y && \
-	yum install -y httpd mod_ssl openssl \
+	yum install -y httpd mod_ssl openssl vixie-cron \
 	php php-apc php-cli php-common php-gd php-mbstring \
 	php-mcrypt php-mhash php-mysql php-odbc php-pdo \
 	php-pear php-pear-DB php-soap php-xml php-xmlrpc \

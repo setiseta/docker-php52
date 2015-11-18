@@ -9,5 +9,8 @@ if [ ! -f /firstrundone ]; then
 	fi
 	echo "done" >> /firstrun
 fi
+
 service postfix start
+service crond start
+
 apachectl -D FOREGROUND

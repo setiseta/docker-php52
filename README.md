@@ -3,6 +3,13 @@
 Docker with Centos 5, PHP 5.2, Apache 2.2 with some modules
 
 ---
+Services
+===
+- Apache
+- postfix
+- vixie-cron (crond)
+
+---
 Usage example
 ===
 ###Needed directories on host:
