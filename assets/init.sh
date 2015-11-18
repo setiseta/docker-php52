@@ -10,7 +10,7 @@ if [ ! -f /firstrundone ]; then
 	echo "smtp_generic_maps = hash:/etc/postfix/generic" >> /etc/postfix/main.cf
 	echo "root	no-reply@$MASQ_DOMAINS" >> /etc/postfix/generic
 	postmap /etc/postfix/generic
-	echo "done" >> /firstrun
+	echo "done" >> /firstrundone
 fi
 
 service syslog start
