@@ -17,4 +17,6 @@ service syslog start
 service postfix start
 service crond start
 
+#remove pid if it exists to fix restart
+rm -f /var/run/httpd.pid
 apachectl -D FOREGROUND
