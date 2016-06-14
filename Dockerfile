@@ -11,7 +11,7 @@ RUN rpm --import http://yum.jasonlitka.com/RPM-GPG-KEY-jlitka && \
 	php php-apc php-cli php-common php-gd php-mbstring \
 	php-mcrypt php-mhash php-mysql php-odbc php-pdo \
 	php-pear php-pear-DB php-soap php-xml php-xmlrpc \
-	php-bcmath \
+	php-bcmath php-imap \
 	postfix && \
 	yum clean all && \
 	mkdir /etc/httpd/vhost.d && \
